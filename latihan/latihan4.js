@@ -9,6 +9,17 @@
 function fizzBuzz(n) {
   // TODO: lakukan looping sebanyak n kali dan cetak nilai n 
   // atau fizz, buzz, atau fizzbuzz tergantung nilai n pada setiap iterasi
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("FizzBuzz"); 
+    } else if (i % 3 === 0) {
+      console.log("Fizz"); 
+    } else if (i % 5 ===0) {
+      console.log("Buzz"); 
+    } else {
+      console.log(i); 
+    }
+  }
 }
 
-module.exports = fizzBuzz
+module.exports = fizzBuzz;
